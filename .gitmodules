@@ -1,0 +1,3 @@
+[submodule "themes/hugo-booklet"]
+	path = themes/hugo-booklet
+	url = https://github.com/sunnymix/hugo-booklet.git
