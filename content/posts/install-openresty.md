@@ -57,11 +57,22 @@ export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
 Update nginx.conf at /usr/local/etc/openresty:
 
 ```
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
 http {
+    include            mime.types;
+    default_type       text/html;
+    sendfile           on;
+    keepalive_timeout  65;
     server {
-        listen 8080;
+        listen       80;
+        server_name  localhost;
+
         location / {
-            default_type text/html;
             content_by_lua_block {
                 ngx.say("<p>nginx version: openresty/1.19.3.2</p>")
             }
@@ -123,10 +134,48 @@ alias openresty.stop="nginx -s stop"
 
 ## 4. Manage config directory
 
-Create config directory:
+Create config directory at working path (/usr/local/etc/openresty):
 
 ```
+mkdir conf.d
 ```
+
+Create localhost config file:
+
+```
+server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        content_by_lua_block {
+            ngx.say("<p>nginx version: openresty/1.19.3.2</p>")
+        }
+    }
+}
+```
+
+Include config files in nginx.conf:
+
+```
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include            mime.types;
+    default_type       text/html;
+    sendfile           on;
+    keepalive_timeout  65;
+    include            conf.d/*.conf;
+}
+```
+
+
+
+
 
 
 
