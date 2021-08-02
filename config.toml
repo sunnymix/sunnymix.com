@@ -1,3 +1,44 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "/"
+languageCode = "zh-CN"
+title = "sunnymix.com"
+theme = "booklet"
+
+[menu]
+  [[menu.primary]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.primary]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 2
+
+  [[menu.primary]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 3
+
+  [[menu.primary]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories"
+    weight = 4
+
+  [[menu.primary]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 5
+
+[params]
+  favicon = "favicon.png"
+  enableInlineShortcodes = true
+  pygmentsCodeFences = true
+  pygmentsUseClasses = true
+  copyright = "2021"
+  highlight = true
+  sitename = "Sunny Mix"

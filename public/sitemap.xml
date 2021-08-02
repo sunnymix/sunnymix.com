@@ -2,10 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/posts/install-openresty/</loc>
+    <lastmod>2021-08-01T22:13:59+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2021-08-01T22:13:59+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/</loc>
+    <lastmod>2021-08-01T22:13:59+08:00</lastmod>
+  </url><url>
+    <loc>/posts/create-blog-with-hugo/</loc>
+    <lastmod>2021-08-01T22:06:16+08:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>

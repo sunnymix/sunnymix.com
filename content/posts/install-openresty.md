@@ -4,10 +4,6 @@ date: 2021-08-01T22:13:59+08:00
 draft: true
 ---
 
-# Install OpenResty
-
-
-
 ## 1. Install
 
 Install the OpenResty with homebrew:
