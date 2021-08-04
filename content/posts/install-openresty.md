@@ -6,7 +6,7 @@ tags:
   - "OpenResty"
 ---
 
-## 1. Install
+## Install
 
 Install the OpenResty with homebrew:
 
@@ -18,17 +18,21 @@ Check OpenResty version:
 
 ```
 openresty -v
------->
-nginx version: openresty/1.19.3.2
 ```
+
+> ```
+> nginx version: openresty/1.19.3.2
+> ```
 
 Check installed location:
 
 ```
 which openresty
------->
-/usr/local/bin/openresty
 ```
+
+> ```
+> /usr/local/bin/openresty
+> ```
 
 Check current installed files:
 
@@ -38,7 +42,7 @@ ll /usr/local/opt/openresty
 
 
 
-## 2. First start
+## First start
 
 Export OpenResty home path:
 
@@ -89,13 +93,15 @@ Test nginx server:
 
 ```
 curl http://localhost
------->
-<p>nginx version: openresty/1.19.3.2</p>
 ```
 
+> ```
+> <p>nginx version: openresty/1.19.3.2</p>
+> ```
 
 
-## 3. Useful commands
+
+## Useful commands
 
 Export openresty home and nginx server path:
 
@@ -130,7 +136,7 @@ alias openresty.stop="nginx -s stop"
 
 
 
-## 4. Manage config directory
+## Manage config directory
 
 Create config directory at working path (/usr/local/etc/openresty):
 
