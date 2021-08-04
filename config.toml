@@ -28,14 +28,8 @@ theme = "booklet"
     url = "/categories"
     weight = 4
 
-  [[menu.primary]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 5
-
 [params]
-  favicon = "favicon.png"
+  faviconfile = "favicon.png"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
   pygmentsUseClasses = true

@@ -239,14 +239,6 @@ hr {
     height: 16px;
 }
 
-/* Partial: Utterances Comments */
-
-.comments {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 100%;
-}
-
 /* < medium screens */
 
 @media (max-width: 767.98px) {
