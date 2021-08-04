@@ -80,20 +80,22 @@
                     <h1 class="mx-0 mx-md-4">Install OpenResty</h1>
                     <div class="markdown">
                         
-    <h2 id="1-install">1. Install</h2>
+    <h2 id="install">Install</h2>
 <p>Install the OpenResty with homebrew:</p>
 <pre><code>brew install openresty/brew/openresty
 </code></pre><p>Check OpenResty version:</p>
 <pre><code>openresty -v
-------&gt;
-nginx version: openresty/1.19.3.2
-</code></pre><p>Check installed location:</p>
+</code></pre><blockquote>
+<pre><code>nginx version: openresty/1.19.3.2
+</code></pre></blockquote>
+<p>Check installed location:</p>
 <pre><code>which openresty
-------&gt;
-/usr/local/bin/openresty
-</code></pre><p>Check current installed files:</p>
+</code></pre><blockquote>
+<pre><code>/usr/local/bin/openresty
+</code></pre></blockquote>
+<p>Check current installed files:</p>
 <pre><code>ll /usr/local/opt/openresty
-</code></pre><h2 id="2-first-start">2. First start</h2>
+</code></pre><h2 id="first-start">First start</h2>
 <p>Export OpenResty home path:</p>
 <pre><code>export OPENRESTY_HOME=/usr/local/opt/openresty
 </code></pre><p>Export OpenResty embeded nginx server to environment path:</p>
@@ -125,9 +127,10 @@ http {
 <pre><code>nginx -p /usr/local/etc/openresty -c nginx.conf
 </code></pre><p>Test nginx server:</p>
 <pre><code>curl http://localhost
-------&gt;
-&lt;p&gt;nginx version: openresty/1.19.3.2&lt;/p&gt;
-</code></pre><h2 id="3-useful-commands">3. Useful commands</h2>
+</code></pre><blockquote>
+<pre><code>&lt;p&gt;nginx version: openresty/1.19.3.2&lt;/p&gt;
+</code></pre></blockquote>
+<h2 id="useful-commands">Useful commands</h2>
 <p>Export openresty home and nginx server path:</p>
 <pre><code>export OPENRESTY_HOME=/usr/local/opt/openresty
 export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
@@ -139,7 +142,7 @@ export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
 <pre><code>alias openresty.reload=&quot;nginx -s reload&quot;
 </code></pre><p>Stop nginx server:</p>
 <pre><code>alias openresty.stop=&quot;nginx -s stop&quot;
-</code></pre><h2 id="4-manage-config-directory">4. Manage config directory</h2>
+</code></pre><h2 id="manage-config-directory">Manage config directory</h2>
 <p>Create config directory at working path (/usr/local/etc/openresty):</p>
 <pre><code>mkdir conf.d
 </code></pre><p>Create localhost config file:</p>
