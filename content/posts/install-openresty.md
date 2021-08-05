@@ -1,7 +1,7 @@
 ---
 title: "安装和使用OpenResty"
 date: 2021-08-01T22:13:59+08:00
-draft: true
+draft: false
 tags: ["OpenResty"]
 ---
 

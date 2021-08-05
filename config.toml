@@ -1,33 +1,36 @@
 baseURL = "/"
 languageCode = "zh-CN"
 title = "sunnymix.com"
-theme = "booklet"
+theme = "minima"
+favicon = "favicon.png"
 
 [menu]
-  [[menu.primary]]
-    identifier = "home"
+  [[menu.main]]
     name = "Home"
     url = "/"
     weight = 1
-
-  [[menu.primary]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags"
-    weight = 3
-
-  [[menu.primary]]
-    identifier = "categories"
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
     name = "Categories"
     url = "/categories"
+    weight = 3
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags"
     weight = 4
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 [params]
-  faviconfile = "favicon.png"
+  sitename = ""
+  copyright = "© 2013－2021 sunnymix.com, all rights reserved"
+  certificate = "（赣ICP备20006923号）"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
   pygmentsUseClasses = true
-  copyright = "© 2013－2021 sunnymix.com, all rights reserved"
-  certificate = "赣ICP备20006923号"
   highlight = true
-  sitename = "Sunny Mix"
