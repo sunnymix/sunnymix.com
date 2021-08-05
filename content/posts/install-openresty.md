@@ -1,48 +1,43 @@
 ---
-title: "Install OpenResty"
+title: "安装OpenResty"
 date: 2021-08-01T22:13:59+08:00
 draft: true
 tags:
   - "OpenResty"
 ---
 
-## Install
+## 安装
 
-Install the OpenResty with homebrew:
+使用Homebrew安装OpenResty：
 
 ```
 brew install openresty/brew/openresty
 ```
 
-Check OpenResty version:
+安装成功后查看OpenResty的版本：
 
 ```
 openresty -v
+-> nginx version: openresty/1.19.3.2
 ```
 
-> ```
-> nginx version: openresty/1.19.3.2
-> ```
-
-Check installed location:
+查看OpenResty命令位置：
 
 ```
 which openresty
+-> /usr/local/bin/openresty
 ```
 
-> ```
-> /usr/local/bin/openresty
-> ```
-
-Check current installed files:
+查看OpenResty命令安装位置：
 
 ```
 ll /usr/local/opt/openresty
+-> /usr/local/opt/openresty -> ../Cellar/openresty/1.19.3.2_1
 ```
 
 
 
-## First start
+## 启动
 
 Export OpenResty home path:
 
@@ -93,15 +88,12 @@ Test nginx server:
 
 ```
 curl http://localhost
+-> <p>nginx version: openresty/1.19.3.2</p>
 ```
 
-> ```
-> <p>nginx version: openresty/1.19.3.2</p>
-> ```
 
 
-
-## Useful commands
+## 常用命令
 
 Export openresty home and nginx server path:
 
@@ -136,7 +128,7 @@ alias openresty.stop="nginx -s stop"
 
 
 
-## Manage config directory
+## 管理配置文件夹
 
 Create config directory at working path (/usr/local/etc/openresty):
 
@@ -176,16 +168,6 @@ http {
     include            conf.d/*.conf;
 }
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
