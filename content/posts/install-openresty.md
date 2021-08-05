@@ -21,14 +21,16 @@ openresty -v
 -> nginx version: openresty/1.19.3.2
 ```
 
-查看OpenResty命令位置：
+查看OpenResty位置：
 
 ```
 which openresty
 -> /usr/local/bin/openresty
+ll /usr/local/bin/openresty
+-> /usr/local/bin/openresty -> ../Cellar/openresty/1.19.3.2_1/bin/openresty
 ```
 
-查看OpenResty命令安装位置：
+查看当前版本的OpenResty安装位置（该位置不会因为版本升级而改变，可以放心引用）：
 
 ```
 ll /usr/local/opt/openresty
@@ -39,19 +41,19 @@ ll /usr/local/opt/openresty
 
 ## 启动
 
-Export OpenResty home path:
+将当前版本的OpenResty安装配置配置为`OPENRESTY_HOME`：
 
 ```
 export OPENRESTY_HOME=/usr/local/opt/openresty
 ```
 
-Export OpenResty embeded nginx server to environment path:
+将当前版本的OpenResty内置的Nginx添加到`PATH`环境变量：
 
 ```
 export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
 ```
 
-Update nginx.conf at /usr/local/etc/openresty:
+配置默认localhost站点，使用lua输出OpenResty的版本号：
 
 ```
 worker_processes  1;
@@ -78,13 +80,13 @@ http {
 }
 ```
 
-Start nginx server:
+启动Nginx服务器，指定工作目录和配置文件：
 
 ```
 nginx -p /usr/local/etc/openresty -c nginx.conf
 ```
 
-Test nginx server:
+测试默认localhost站点：
 
 ```
 curl http://localhost
@@ -95,32 +97,32 @@ curl http://localhost
 
 ## 常用命令
 
-Export openresty home and nginx server path:
+配置OpenResty的HOME目录，添加Nginx到PATH环境变量：
 
 ```
 export OPENRESTY_HOME=/usr/local/opt/openresty
 export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
 ```
 
-Go to openresty home:
+切换到OpenResty的HOME目录：
 
 ```
 alias openresty.home="cd $OPENRESTY_HOME"
 ```
 
-Start nginx server with working path and config file:
+启动Nginx服务器：
 
 ```
 alias openresty.start="nginx -p /usr/local/etc/openresty -c nginx.conf"
 ```
 
-Hot reload nginx server config:
+热更新Nginx的配置文件：
 
 ```
 alias openresty.reload="nginx -s reload"
 ```
 
-Stop nginx server:
+停止Nginx服务器：
 
 ```
 alias openresty.stop="nginx -s stop"
@@ -130,13 +132,13 @@ alias openresty.stop="nginx -s stop"
 
 ## 管理配置文件夹
 
-Create config directory at working path (/usr/local/etc/openresty):
+创建统一文件夹管理配置文件，在`/usr/local/etc/openresty`：
 
 ```
 mkdir conf.d
 ```
 
-Create localhost config file:
+拆分独立的localhost站点配置文件：
 
 ```
 server {
@@ -151,7 +153,7 @@ server {
 }
 ```
 
-Include config files in nginx.conf:
+在Nginx主配置文件中导入配置文件夹中的所有配置文件：
 
 ```
 worker_processes  1;
