@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Install OpenResty - sunnymix.com </title>
+    <title> 安装和使用OpenResty - sunnymix.com </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
@@ -12,7 +12,7 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="/posts/install-openresty/" />
-    <meta property="og:title" content="Install OpenResty" />
+    <meta property="og:title" content="安装和使用OpenResty" />
     <meta property="og:image" content="/" />
     <meta property="og:description" content="" />
     <link rel="canonical" href="/posts/install-openresty/" />
@@ -48,13 +48,6 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link text-posts" href="/posts">
-                        
-                        Posts
-                    </a>
-                </li>
-                
-                <li class="nav-item">
                     <a class="nav-link text-tags" href="/tags">
                         
                         Tags
@@ -77,30 +70,36 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-lg-8">
-                    <h1 class="mx-0 mx-md-4">Install OpenResty</h1>
+                    <h1 class="mx-0 mx-md-4">安装和使用OpenResty</h1>
+                    <div class="mx-0 mx-md-4 mb-5">
+                    
+                    
+                        <time>2021/08/01</time>
+                    
+                    
+                    </div>
                     <div class="markdown">
                         
-    <h2 id="install">Install</h2>
-<p>Install the OpenResty with homebrew:</p>
-<pre><code>brew install openresty/brew/openresty
-</code></pre><p>Check OpenResty version:</p>
-<pre><code>openresty -v
-</code></pre><blockquote>
-<pre><code>nginx version: openresty/1.19.3.2
-</code></pre></blockquote>
-<p>Check installed location:</p>
-<pre><code>which openresty
-</code></pre><blockquote>
-<pre><code>/usr/local/bin/openresty
-</code></pre></blockquote>
-<p>Check current installed files:</p>
-<pre><code>ll /usr/local/opt/openresty
-</code></pre><h2 id="first-start">First start</h2>
-<p>Export OpenResty home path:</p>
+    <h2 id="安装">安装</h2>
+<p>使用Homebrew安装OpenResty：</p>
+<pre><code>&gt; brew install openresty/brew/openresty
+</code></pre><p>安装成功后查看OpenResty的版本：</p>
+<pre><code>&gt; openresty -v
+nginx version: openresty/1.19.3.2
+</code></pre><p>查看OpenResty位置：</p>
+<pre><code>&gt; which openresty
+/usr/local/bin/openresty
+&gt; ll /usr/local/bin/openresty
+/usr/local/bin/openresty -&gt; ../Cellar/openresty/1.19.3.2_1/bin/openresty
+</code></pre><p>查看当前版本的OpenResty安装位置（该位置不会因为版本升级而改变，可以放心引用）：</p>
+<pre><code>&gt; ll /usr/local/opt/openresty
+/usr/local/opt/openresty -&gt; ../Cellar/openresty/1.19.3.2_1
+</code></pre><h2 id="启动">启动</h2>
+<p>将当前版本的OpenResty安装配置配置为<code>OPENRESTY_HOME</code>：</p>
 <pre><code>export OPENRESTY_HOME=/usr/local/opt/openresty
-</code></pre><p>Export OpenResty embeded nginx server to environment path:</p>
+</code></pre><p>将当前版本的OpenResty内置的Nginx添加到<code>PATH</code>环境变量：</p>
 <pre><code>export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
-</code></pre><p>Update nginx.conf at /usr/local/etc/openresty:</p>
+</code></pre><p>配置默认localhost站点，使用lua输出OpenResty的版本号：</p>
 <pre><code>worker_processes  1;
 
 events {
@@ -123,29 +122,27 @@ http {
         }
     }
 }
-</code></pre><p>Start nginx server:</p>
-<pre><code>nginx -p /usr/local/etc/openresty -c nginx.conf
-</code></pre><p>Test nginx server:</p>
-<pre><code>curl http://localhost
-</code></pre><blockquote>
-<pre><code>&lt;p&gt;nginx version: openresty/1.19.3.2&lt;/p&gt;
-</code></pre></blockquote>
-<h2 id="useful-commands">Useful commands</h2>
-<p>Export openresty home and nginx server path:</p>
+</code></pre><p>启动Nginx服务器，指定工作目录和配置文件：</p>
+<pre><code>&gt; nginx -p /usr/local/etc/openresty -c nginx.conf
+</code></pre><p>测试默认localhost站点：</p>
+<pre><code>&gt; curl http://localhost
+&lt;p&gt;nginx version: openresty/1.19.3.2&lt;/p&gt;
+</code></pre><h2 id="常用命令">常用命令</h2>
+<p>配置OpenResty的HOME目录，添加Nginx到PATH环境变量：</p>
 <pre><code>export OPENRESTY_HOME=/usr/local/opt/openresty
 export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
-</code></pre><p>Go to openresty home:</p>
+</code></pre><p>切换到OpenResty的HOME目录：</p>
 <pre><code>alias openresty.home=&quot;cd $OPENRESTY_HOME&quot;
-</code></pre><p>Start nginx server with working path and config file:</p>
+</code></pre><p>启动Nginx服务器：</p>
 <pre><code>alias openresty.start=&quot;nginx -p /usr/local/etc/openresty -c nginx.conf&quot;
-</code></pre><p>Hot reload nginx server config:</p>
+</code></pre><p>热更新Nginx的配置文件：</p>
 <pre><code>alias openresty.reload=&quot;nginx -s reload&quot;
-</code></pre><p>Stop nginx server:</p>
+</code></pre><p>停止Nginx服务器：</p>
 <pre><code>alias openresty.stop=&quot;nginx -s stop&quot;
-</code></pre><h2 id="manage-config-directory">Manage config directory</h2>
-<p>Create config directory at working path (/usr/local/etc/openresty):</p>
-<pre><code>mkdir conf.d
-</code></pre><p>Create localhost config file:</p>
+</code></pre><h2 id="管理配置文件夹">管理配置文件夹</h2>
+<p>创建统一文件夹管理配置文件，在<code>/usr/local/etc/openresty</code>：</p>
+<pre><code>&gt; mkdir conf.d
+</code></pre><p>拆分独立的localhost站点配置文件：</p>
 <pre><code>server {
     listen       80;
     server_name  localhost;
@@ -156,7 +153,7 @@ export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
         }
     }
 }
-</code></pre><p>Include config files in nginx.conf:</p>
+</code></pre><p>在Nginx主配置文件中导入配置文件夹中的所有配置文件：</p>
 <pre><code>worker_processes  1;
 
 events {
@@ -184,6 +181,10 @@ http {
         <div class="row justify-content-center">
             <div class="col-auto">
                 <div class="text-black-50">© 2013－2021 sunnymix.com, all rights reserved</div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
                 <div class="text-black-50">赣ICP备20006923号</div>
             </div>
         </div>

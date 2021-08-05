@@ -11,12 +11,6 @@ theme = "booklet"
     weight = 1
 
   [[menu.primary]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
-    weight = 2
-
-  [[menu.primary]]
     identifier = "tags"
     name = "Tags"
     url = "/tags"

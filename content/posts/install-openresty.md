@@ -1,9 +1,8 @@
 ---
-title: "安装OpenResty"
+title: "安装和使用OpenResty"
 date: 2021-08-01T22:13:59+08:00
 draft: true
-tags:
-  - "OpenResty"
+tags: ["OpenResty"]
 ---
 
 ## 安装
@@ -11,30 +10,30 @@ tags:
 使用Homebrew安装OpenResty：
 
 ```
-brew install openresty/brew/openresty
+> brew install openresty/brew/openresty
 ```
 
 安装成功后查看OpenResty的版本：
 
 ```
-openresty -v
--> nginx version: openresty/1.19.3.2
+> openresty -v
+nginx version: openresty/1.19.3.2
 ```
 
 查看OpenResty位置：
 
 ```
-which openresty
--> /usr/local/bin/openresty
-ll /usr/local/bin/openresty
--> /usr/local/bin/openresty -> ../Cellar/openresty/1.19.3.2_1/bin/openresty
+> which openresty
+/usr/local/bin/openresty
+> ll /usr/local/bin/openresty
+/usr/local/bin/openresty -> ../Cellar/openresty/1.19.3.2_1/bin/openresty
 ```
 
 查看当前版本的OpenResty安装位置（该位置不会因为版本升级而改变，可以放心引用）：
 
 ```
-ll /usr/local/opt/openresty
--> /usr/local/opt/openresty -> ../Cellar/openresty/1.19.3.2_1
+> ll /usr/local/opt/openresty
+/usr/local/opt/openresty -> ../Cellar/openresty/1.19.3.2_1
 ```
 
 
@@ -83,14 +82,14 @@ http {
 启动Nginx服务器，指定工作目录和配置文件：
 
 ```
-nginx -p /usr/local/etc/openresty -c nginx.conf
+> nginx -p /usr/local/etc/openresty -c nginx.conf
 ```
 
 测试默认localhost站点：
 
 ```
-curl http://localhost
--> <p>nginx version: openresty/1.19.3.2</p>
+> curl http://localhost
+<p>nginx version: openresty/1.19.3.2</p>
 ```
 
 
@@ -135,7 +134,7 @@ alias openresty.stop="nginx -s stop"
 创建统一文件夹管理配置文件，在`/usr/local/etc/openresty`：
 
 ```
-mkdir conf.d
+> mkdir conf.d
 ```
 
 拆分独立的localhost站点配置文件：
