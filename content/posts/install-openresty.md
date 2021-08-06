@@ -53,7 +53,7 @@ export OPENRESTY_HOME=/usr/local/opt/openresty
 export PATH=$PATH:$OPENRESTY_HOME/nginx/sbin
 ```
 
-配置默认localhost站点，使用lua输出OpenResty的版本号：
+修改配置文件/usr/local/etc/openresty/nginx.conf，在localhost首页输出OpenResty的版本号：
 
 ```
 worker_processes  1;
