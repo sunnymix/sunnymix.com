@@ -3,7 +3,7 @@ title: "安装和使用OpenResty"
 author: "Sunny"
 date: 2021-08-01T22:13:59+08:00
 draft: false
-tags: ["OpenResty"]
+tags: ["OpenResty", "Nginx"]
 ---
 
 ## 安装
