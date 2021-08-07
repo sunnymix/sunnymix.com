@@ -30,6 +30,7 @@ favicon = "favicon.png"
   sitename = ""
   copyright = "© 2013－2021 sunnymix.com, all rights reserved"
   certificate = "（赣ICP备20006923号）"
+  dateform = "2006/01/02"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
   pygmentsUseClasses = true
