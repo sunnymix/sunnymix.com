@@ -11,6 +11,10 @@
   --bd-pre: #e0e1e5;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 html.dark {
   --bg: #262d33;
   --ft: #eee;

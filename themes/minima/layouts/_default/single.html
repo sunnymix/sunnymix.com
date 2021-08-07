@@ -10,15 +10,12 @@
 		{{ end }}
 		Posted at &mdash; {{ dateFormat .Site.Params.dateform .Date }}
 		{{ if .Draft }}
-		<span class="tag ml-1">
-			DRAFT
-		</span>
+		<span class="tag ml-1">DRAFT</span>
 		{{ end }}
 	</div>
 	<p>{{ .Description }}</p>
-	<article class="md">
-		{{ .Content }}
-	</article>
+	<article class="md">{{ .Content }}</article>
+	<div class="mtb-2"><span class="sm-1 c-tag">END.</span></div>
 </main>
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
@@ -26,10 +23,6 @@
 
 {{ if and .Params.comment (eq .Site.Params.comment "disqus")}}
 {{ partial "disqus.html" . }}
-{{ end }}
-
-{{ if and .Params.comment (eq .Site.Params.comment "ovo")}}
-{{ partial "ovo.html" . }}
 {{ end }}
 
 {{ end }}

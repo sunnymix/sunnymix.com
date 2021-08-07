@@ -1,9 +1,9 @@
 ---
-title: "Nginx配置Https证书"
+title: "Nginx Https证书生成和配置"
 author: "Sunny"
 date: 2021-08-06T22:18:16+08:00
 draft: true
-tags: ["OpenResty", "Nginx", "Https", "Ssl", "Security"]
+tags: ["openresty", "nginx", "https", "ssl", "security"]
 ---
 
 ## 步骤

@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
-  const light = 'Light', dark = 'Dark';
+  const light = 'Theme - Light', dark = 'Theme - Dark';
   const LIGHT = 'light', DARK = 'dark';
   const themeSwitcher = document.getElementById('theme-switcher');
 
@@ -15,7 +15,4 @@ window.addEventListener('DOMContentLoaded', function () {
     localStorage.theme = newTheme;
     themeSwitcher.innerHTML = text;
   });
-
-
-  
 });
