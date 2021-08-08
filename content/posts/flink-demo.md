@@ -6,3 +6,9 @@ draft: true
 tags: ["flink", "data", "demo"]
 ---
 
+## 单机版
+
+
+
+## 集群版
+
