@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const LIGHT = 'light', DARK = 'dark';
   const themeSwitcher = document.getElementById('theme-switcher');
 
-  themeSwitcher.innerHTML = localStorage.theme === LIGHT ? light : dark;
+  // themeSwitcher.innerHTML = localStorage.theme === LIGHT ? light : dark;
 
   themeSwitcher.addEventListener('click', function () {
     const currentTheme = localStorage.theme,
@@ -13,6 +13,6 @@ window.addEventListener('DOMContentLoaded', function () {
     classList.remove(currentTheme);
     classList.add(newTheme);
     localStorage.theme = newTheme;
-    themeSwitcher.innerHTML = text;
+    // themeSwitcher.innerHTML = text;
   });
 });
