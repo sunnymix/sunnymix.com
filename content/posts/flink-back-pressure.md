@@ -6,4 +6,15 @@ author: "Sunny"
 tags: ["flink", "back-pressure"]
 ---
 
-## Back Pressure反压是什么
+## 背压
+
+### 关键点
+
+- 背压产生原因
+- 背压定义
+- 背压处理方案
+
+
+
+## 参考
+
