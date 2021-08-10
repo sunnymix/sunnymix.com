@@ -71,4 +71,4 @@ tags: ["flink", "back-pressure"]
 
 ## 背压处理策略
 
-编辑中
+![](strategy.png)
