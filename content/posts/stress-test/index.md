@@ -1,5 +1,5 @@
 ---
-title: "Stress Test"
+title: "压力测试"
 date: 2021-08-13T22:40:09+08:00
 draft: true
 author: "Sunny"
