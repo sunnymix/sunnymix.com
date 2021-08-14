@@ -1,0 +1,44 @@
+{{ $bookSection := default "docs" .Site.Params.BookSection  }}
+
+{{ with .Site.GetPage $bookSection }}
+	<div class="tree">
+		{{ template "tree-folder" (dict "Section" . "CurrentPage" $) }}
+	</div>
+{{ end }}
+
+{{ define "tree-folder" }}
+	<ul class="tree-folder">
+		{{ range (where (.Section.Pages.ByParam (default 0 "weight")) "Params.bookhidden" "ne" true) }}
+			{{ if .IsSection }}
+				<li class="tree-item tree-section">
+					{{ template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+					{{ template "tree-folder" (dict "Section" . "CurrentPage" $.CurrentPage) }}
+				</li>
+			{{ else if and .IsPage .Content }}
+				<li class="tree-item tree-page">
+					{{ template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+				</li>
+			{{ end }}
+		{{ end }}
+	</ul>
+{{ end }}
+
+{{ define "tree-item" }}
+	{{ $current := eq .CurrentPage .Page }}
+	{{ $ancestor := .Page.IsAncestor .CurrentPage }}
+
+	{{ if .Page.Params.bookCollapseSection }}
+		<input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
+		<label for="section-{{ md5 .Page }}" class="flex justify-between">
+			<a {{ if .Page.Content }}href="{{ .Page.Permalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
+				{{- partial "title.html" .Page -}}
+			</a>
+		</label>
+	{{ else if .Page.Content }}
+		<a href="{{ .Page.Permalink }}" class="tree-item-link {{ if $current }} active{{ end }}">
+			{{- partial "title.html" .Page -}}
+		</a>
+	{{ else }}
+		<span>{{- partial "title.html" .Page -}}</span>
+	{{ end }}
+{{ end }}

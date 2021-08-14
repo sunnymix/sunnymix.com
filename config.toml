@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "zh-CN"
 title = "sunnymix.com"
-theme = "minima"
+theme = "draft"
 favicon = "favicon.png"
 
 [menu]
@@ -14,8 +14,8 @@ favicon = "favicon.png"
     url = "/posts"
     weight = 2
   [[menu.main]]
-    name = "Categories"
-    url = "/categories"
+    name = "Docs"
+    url = "/docs"
     weight = 3
   [[menu.main]]
     name = "Tags"
@@ -23,14 +23,13 @@ favicon = "favicon.png"
     weight = 4
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
 
 [params]
   sitename = ""
-  copyright = "© 2013－2021 sunnymix.com, all rights reserved"
+  copyright = "© 2013-2021 sunnymix.com, all rights reserved"
   certificate = "（赣ICP备20006923号）"
-  dateform = "2006/01/02"
+  dateform = "2006.01.02"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
   pygmentsUseClasses = true
