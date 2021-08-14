@@ -3,9 +3,13 @@
 	{{ partial "head.html" . }}
 <body>
 	{{ partial "header.html" . }}
-	<div class="row">
-		{{ partial "tree.html" . }}
-		{{ block "main" . }} {{ end }}
+	<div class="row ai-s">
+		<div class="flex-fixed">
+			{{ partial "tree.html" . }}
+		</div>
+		<div class="flex-extend">
+			{{ block "main" . }} {{ end }}
+		</div>
 	</div>
 </body>
 </html>

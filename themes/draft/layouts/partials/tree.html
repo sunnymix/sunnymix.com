@@ -7,7 +7,7 @@
 {{ end }}
 
 {{ define "tree-folder" }}
-	<ul class="tree-folder">
+	<ul class="tree-folder clear">
 		{{ range (where (.Section.Pages.ByParam (default 0 "weight")) "Params.bookhidden" "ne" true) }}
 			{{ if .IsSection }}
 				<li class="tree-item tree-section">
