@@ -1,27 +1,27 @@
 {{ $bookSection := default "docs" .Site.Params.BookSection  }}
 
-{{ with .Site.GetPage $bookSection }}
-	<div class="tree">
-		{{ template "tree-folder" (dict "Section" . "CurrentPage" $) }}
-	</div>
-{{ end }}
+{{- with .Site.GetPage $bookSection -}}
+<div class="tree">
+{{ template "tree-folder" (dict "Section" . "CurrentPage" $) }}
+</div>
+{{- end -}}
 
 {{ define "tree-folder" }}
-	<ul class="tree-folder clear">
-		{{ range (where (.Section.Pages.ByParam (default 0 "weight")) "Params.bookhidden" "ne" true) }}
-			{{ if .IsSection }}
-				<li class="tree-item tree-section">
-					{{ template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) }}
-					{{ template "tree-folder" (dict "Section" . "CurrentPage" $.CurrentPage) }}
-				</li>
-			{{ else if and .IsPage .Content }}
-				<li class="tree-item tree-page">
-					{{ template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) }}
-				</li>
-			{{ end }}
-		{{ end }}
-	</ul>
+<ul class="tree-folder clear">
+{{ range (where (.Section.Pages.ByParam (default 0 "weight")) "Params.bookhidden" "ne" true) -}}
+	{{ if .IsSection }}
+	<li class="tree-item tree-section">
+		{{- template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) -}}
+		{{- template "tree-folder" (dict "Section" . "CurrentPage" $.CurrentPage) -}}
+	</li>
+	{{ else if and .IsPage .Content }}
+	<li class="tree-item tree-page">
+		{{- template "tree-item" (dict "Page" . "CurrentPage" $.CurrentPage) -}}
+	</li>
+	{{ end }}
 {{ end }}
+</ul>
+{{ end -}}
 
 {{ define "tree-item" }}
 	{{ $current := eq .CurrentPage .Page }}
@@ -35,10 +35,10 @@
 			</a>
 		</label>
 	{{ else if .Page.Content }}
-		<a href="{{ .Page.Permalink }}" class="tree-item-link {{ if $current }} active{{ end }}">
+		<a href="{{ .Page.Permalink }}" class="tree-item-link c-tag {{ if $current }} active{{ end }}">
 			{{- partial "title.html" .Page -}}
 		</a>
 	{{ else }}
-		<span>{{- partial "title.html" .Page -}}</span>
+		<span class="c-tag">{{- partial "title.html" .Page -}}</span>
 	{{ end }}
 {{ end }}

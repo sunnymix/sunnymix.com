@@ -1,18 +1,22 @@
 window.addEventListener('DOMContentLoaded', function () {
-  const light = 'Theme : Light', dark = 'Theme : Dark';
-  const LIGHT = 'light', DARK = 'dark';
-  const themeSwitcher = document.getElementById('theme-switcher');
+	const LIGHT = 'light', DARK = 'dark';
+	const themeSwitcher = document.getElementById('theme-switcher');
 
-  // themeSwitcher.innerHTML = localStorage.theme === LIGHT ? light : dark;
+	themeSwitcher.addEventListener('click', function () {
+		changeTheme(true);
+	});
 
-  themeSwitcher.addEventListener('click', function () {
-    const currentTheme = localStorage.theme,
-      newTheme = currentTheme === LIGHT ? DARK : LIGHT,
-      { classList } = document.querySelector('html'),
-      text = newTheme === LIGHT ? light : dark;
-    classList.remove(currentTheme);
-    classList.add(newTheme);
-    localStorage.theme = newTheme;
-    // themeSwitcher.innerHTML = text;
-  });
+	function changeTheme(isToggle) {
+		const currentTheme = localStorage.theme,
+			{ classList } = document.querySelector('html');
+		var newTheme = currentTheme;
+		if (isToggle) {
+			newTheme = currentTheme === LIGHT ? DARK : LIGHT;
+		}
+		classList.remove(currentTheme);
+		classList.add(newTheme);
+		localStorage.theme = newTheme;
+	}
+
+	changeTheme();
 });

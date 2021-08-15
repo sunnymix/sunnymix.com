@@ -16,13 +16,3 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/syntax.css" />
 	<script src="/js/main.js"></script>
 </head>
-<script>
-	try {
-		if (!('theme' in localStorage)) {
-			localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
-		}
-		document.querySelector('html').classList.add(localStorage.theme);
-	} catch (e) {
-		console.error(e);
-	}
-</script>

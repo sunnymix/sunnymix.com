@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	{{ partial "head.html" . }}
+{{ partial "head.html" . }}
 <body class="wide">
-	{{ partial "header.html" . }}
-	<div class="row ai-s">
-		<div class="flex-fixed">
-			{{ partial "tree.html" . }}
-		</div>
-		<div class="flex-extend">
-			{{ block "main" . }} {{ end }}
-		</div>
+{{ partial "header.html" . }}
+<div class="row ai-s">
+	<div class="flex-fixed">
+	{{ partial "tree.html" . }}
 	</div>
+	<div class="flex-extend">
+	{{ block "main" . }} {{ end }}
+	</div>
+</div>
 </body>
 </html>
