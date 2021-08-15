@@ -9,6 +9,8 @@
 
 	--bg-pre: #fafafa;
 	--bd-pre: #e0e1e5;
+
+	--lh: 1.5;
 }
 
 html {
@@ -59,12 +61,12 @@ body {
 
 h1,h2,h3,h4,h5 {
 	font-weight: 700;
-	line-height: 1.5;
+	line-height: var(--lh);
 }
 
 p {
 	margin-top: 0;
-	line-height: 1.5;
+	line-height: var(--lh);
 	text-align: left;
 }
 
@@ -129,6 +131,11 @@ ul.clear ul {
 .tree {
 	width: 240px;
 	padding: 20px 20px 20px 0;
+}
+
+.tree-item-link {
+	display: inline-block;
+	line-height: var(--lh);
 }
 
 /* Main  */
