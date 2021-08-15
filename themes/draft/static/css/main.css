@@ -5,7 +5,7 @@
 	--ft: #222;
 	--tag: #999;
 
-	--w-mobile: 840px;
+	--w-mobile: 720px;
 
 	--bg-pre: #fafafa;
 	--bd-pre: #e0e1e5;
@@ -39,6 +39,10 @@ html.dark #theme-switcher .dark {
 html.light #theme-switcher .dark,
 html.dark #theme-switcher .light {
 	display: none;
+}
+
+body.wide {
+	--w-mobile: 960px;
 }
 
 body {
