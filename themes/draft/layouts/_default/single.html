@@ -17,12 +17,4 @@
 	<article class="md">{{ .Content }}</article>
 	<div class="mtb-2"><span class="sm-1 c-tag">END.</span></div>
 </main>
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-
-{{ if and .Params.comment (eq .Site.Params.comment "disqus")}}
-{{ partial "disqus.html" . }}
-{{ end }}
-
 {{ end }}

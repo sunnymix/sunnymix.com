@@ -1,0 +1,17 @@
+<div class="article">
+	<h1>{{ .Title }}</h1>
+	<div class="sm-1 mtb-1 c-tag">
+		{{ if .Params.Author }}
+			{{ .Params.Author }}
+		{{ end }}
+		{{ if .Date }}
+			<span>Posted at {{ dateFormat .Site.Params.dateform .Date }}</span>
+		{{ end }}
+		{{ if .Draft }}
+			<span class="tag ml-1">DRAFT</span>
+		{{ end }}
+	</div>
+	<p>{{ .Description }}</p>
+	<div class="md">{{ .Content }}</div>
+	<div class="mtb-2"><span class="sm-1 c-tag">END.</span></div>
+</div>

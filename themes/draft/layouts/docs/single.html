@@ -1,28 +1,8 @@
 {{ define "main" }}
-{{ if .Params.toc }}
-{{ partial "toc.html" . }}
-{{ end }}
-<div class="main">
-	<h1>{{ .Title }}</h1>
-	<div class="sm-1 mtb-1 c-tag">
-		{{ if .Params.Author }}
-		{{ .Params.Author }}
-		{{ end }}
-		Posted at &mdash; {{ dateFormat .Site.Params.dateform .Date }}
-		{{ if .Draft }}
-		<span class="tag ml-1">DRAFT</span>
-		{{ end }}
+	{{ if .Params.toc }}
+	{{ partial "toc.html" . }}
+	{{ end }}
+	<div class="main">
+		{{ partial "article.html" . }}
 	</div>
-	<p>{{ .Description }}</p>
-	<div class="md">{{ .Content }}</div>
-	<div class="mtb-2"><span class="sm-1 c-tag">END.</span></div>
-</div>
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-
-{{ if and .Params.comment (eq .Site.Params.comment "disqus")}}
-{{ partial "disqus.html" . }}
-{{ end }}
-
 {{ end }}
