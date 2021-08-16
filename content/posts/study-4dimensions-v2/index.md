@@ -6,3 +6,6 @@ author: "Sunny"
 tags: ["study", "dimensions"]
 ---
 
+## 知识的层次
+
+![](draw-knowledge-layer.png)
