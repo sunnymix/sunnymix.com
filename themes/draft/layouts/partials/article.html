@@ -6,16 +6,20 @@
 		{{- end -}}
 
 		{{- if .Date -}}
-			<span>Posted at {{ dateFormat .Site.Params.dateform .Date }}</span>
+		<span>Posted at {{ dateFormat .Site.Params.dateform .Date }}. </span>
+		{{- end -}}
+
+		{{- if .Lastmod -}}
+		<span>Updated at {{ dateFormat .Site.Params.dateform .Lastmod }}. </span>
 		{{- end -}}
 
 		{{- if .Draft -}}
-			<span class="tag ml-1">DRAFT</span>
+		<span>(DRAFT) </span>
 		{{- end -}}
 	</div>
 	<p>{{ .Description }}</p>
 	<div class="md">
 	{{- .Content -}}
 	</div>
-	<div class="mtb-2"><span class="sm-1 c-tag">END.</span></div>
+	<div class="mtb-2"><span class="sm-1 c-tag">(END)</span></div>
 </div>
