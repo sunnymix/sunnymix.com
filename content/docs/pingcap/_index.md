@@ -1,6 +1,4 @@
 ---
 title: "PingCAP"
-weight: 4
+weight: 7
 ---
-
-PingCAP

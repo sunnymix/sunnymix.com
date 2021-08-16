@@ -1,11 +1,11 @@
 ---
-title: "TiUP快速上手"
+title: "快速上手"
 date: 2021-08-15T22:12:50+08:00
 lastmod: 2021-08-16T12:48:00+08:00
 draft: true
 weight: 1
 author: "Sunny"
-tags: ["tiup"]
+tags: ["tiup", "quickstart"]
 ---
 
 ## 安装

@@ -55,8 +55,8 @@ body {
 	font-weight: 400;
 	color: var(--ft);
 	background-color: var(--bg);
-	transition-property: background-color, border-color, color;
-	transition-duration: .5s;
+	/*transition-property: background-color, border-color, color;*/
+	/*transition-duration: .5s;*/
 }
 
 h1,h2,h3,h4,h5 {
@@ -104,9 +104,9 @@ a:not(.icon) {
 	/*transition: background-position .2s ease-in-out;*/
 }
 
-a:not(.icon):hover {
+a:hover {
 	/*background-position: 0 100%;*/
-	color: var(--pm);
+	/*color: var(--pm);*/
 	text-decoration: underline;
 }
 
@@ -136,6 +136,10 @@ ul.clear ul {
 .tree-item-link {
 	display: inline-block;
 	line-height: var(--lh);
+}
+
+.tree-item-link.active {
+	color: var(--pm);
 }
 
 /* Main  */

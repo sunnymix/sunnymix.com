@@ -1,6 +1,4 @@
 ---
 title: "K8s"
-weight: 1
+weight: 3
 ---
-
-K8s
