@@ -22,7 +22,13 @@ tags: ["flink", "deploy"]
 
 ### Flink
 
-下载：https://flink.apache.org/downloads.html
+下载页面：https://flink.apache.org/downloads.html
+
+下载链接：https://apache.website-solution.net/flink/flink-1.13.2/flink-1.13.2-bin-scala_2.11.tgz
+
+```
+> wget https://apache.website-solution.net/flink/flink-1.13.2/flink-1.13.2-bin-scala_2.11.tgz
+```
 
 
 
