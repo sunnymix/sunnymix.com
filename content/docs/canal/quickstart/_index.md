@@ -16,6 +16,8 @@ tags: ["canal", "quickstart"]
 
 ### MySQL主备复制原理
 
+![](draw-workflow.png)
+
 - MySQL Master将数据变更写入Binary Log，记录为Binary Log Events。
 - MySQL Slave将Binary Log同步到它的Relay Log。
 - MySQL Slave重放Relay Log Events，将数据变更反映成它自己的数据。
@@ -25,4 +27,10 @@ tags: ["canal", "quickstart"]
 - Canal伪装成MySQL Slave向MySQL Master发送dump协议。
 - MySQL Master收到dump请求，推送Binary Log给Canal。
 - Canal解析Binary Log Events对象。
+
+## Canal架构
+
+### 组件和架构
+
+![](draw-architecture.png)
 
