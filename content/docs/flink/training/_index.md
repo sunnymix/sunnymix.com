@@ -1,3 +1,3 @@
 ---
-title: "训练"
+title: "Training"
 ---

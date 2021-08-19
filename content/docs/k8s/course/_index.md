@@ -1,3 +1,3 @@
 ---
-title: "课程"
+title: "Course"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Standalone"
+title: "StandAlone"
 date: 2021-08-16T13:09:00+08:00
 lastmod: 2021-08-16T13:09:00+08:00
 draft: true
