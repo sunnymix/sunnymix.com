@@ -1,5 +1,5 @@
 ---
-title: "Lock"
+title: "Locking"
 weight: 1
 ---
 
