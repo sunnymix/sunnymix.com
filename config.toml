@@ -14,8 +14,8 @@ favicon = "favicon.png"
     url = "/posts/"
     weight = 2
   [[menu.main]]
-    name = "Docs"
-    url = "/docs/"
+    name = "Wikis"
+    url = "/wikis/"
     weight = 3
   [[menu.main]]
     name = "Tags"

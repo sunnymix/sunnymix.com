@@ -12,11 +12,11 @@ tags: ["flink", "deploy"]
 
 ### Java
 
-参考：[Java快速上手](/docs/java/quickstart/)
+参考：[Java快速上手](/wikis/java/)
 
 ### Scala
 
-参考：[Scala快速上手](/docs/scala/quickstart/)
+参考：[Scala快速上手](/wikis/scala/)
 
 ## 部署步骤
 
