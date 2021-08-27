@@ -2,10 +2,10 @@
 	<h1>{{ .Title }}</h1>
 	<div class="sm-1 mtb-1 c-tag">
 		{{- if .Params.Author -}}
-		<span>{{ .Params.Author }} </span>
+		<span class="tag mr-1">{{ .Params.Author }} </span>
 		{{- end -}}
 		{{- if .Draft -}}
-		<span class="tag ml-1">DRAFT</span>
+		<span class="tag mr-1">DRAFT</span>
 		{{- end -}}
 	</div>
 	<p>{{ .Description }}</p>
