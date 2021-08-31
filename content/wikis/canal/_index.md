@@ -2,7 +2,7 @@
 title: "Canal"
 date: 2021-08-16T15:25:56+08:00
 draft: true
-weight: 6
+weight: 7
 author: "Sunny"
 tags: ["canal", "quickstart"]
 ---
