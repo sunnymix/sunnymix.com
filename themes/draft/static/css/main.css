@@ -87,7 +87,7 @@ code {
 	word-wrap: break-word;
 	word-break:  word-break;
 	white-space: break-spaces;
-	font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: "SF Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 	font-size: 13px;
 }
 
