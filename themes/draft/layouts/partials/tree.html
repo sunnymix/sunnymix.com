@@ -37,8 +37,8 @@
 	{{ else }}
 		<a href="{{ .Page.Permalink }}" class="tree-item-link {{ if $current }} active{{ end }}">
 			{{- partial "title.html" .Page -}}
-			{{- if eq .Page.Draft false -}}
-			<span class="article-status">New</span>
+			{{- if .Page.Draft -}}
+			<span class="article-status">○</span>
 			{{- end -}}
 		</a>
 	{{ end }}
