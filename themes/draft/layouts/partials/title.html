@@ -1,11 +1,13 @@
-{{ $title := "" }}
+{{ $title := newScratch }}
+
+{{ $title.Set "title" "" }}
 
 {{ if .Title }}
-	{{ $title = .Title }}
+	{{ $title.Set "title" .Title }}
 {{ else if and .IsSection .File }}
-	{{ $title = path.Base .File.Dir | humanize | title }}
+	{{ $title.Set "title" path.Base .File.Dir | humanize | title }}
 {{ else if and .IsPage .File }}
-	{{ $title = .File.BaseFileName | humanize | title }}
+	{{ $title.Set "title" .File.BaseFileName | humanize | title }}
 {{ end }}
 
-{{ return $title }}
+{{ return $title.Get "title" }}
