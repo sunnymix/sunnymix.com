@@ -2,6 +2,6 @@
 title: "Event Storming"
 draft: true
 author: Sunny
-weight: 1
+weight: 2
 ---
 
