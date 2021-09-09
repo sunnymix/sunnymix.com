@@ -1,5 +1,5 @@
 ---
-title: "Systems"
+title: "System"
 draft: true
 weight: 13
 ---
