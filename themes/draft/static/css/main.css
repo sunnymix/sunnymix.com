@@ -273,12 +273,6 @@ ul.clear ul {
 	padding: 2px 8px;
 }
 
-.article-status {
-	margin-left: 5px;
-	font-size: .7em;
-	color: #aaa;
-}
-
 details.toc ul {
 	list-style-type: none;
 	padding-inline-start: 1em;
