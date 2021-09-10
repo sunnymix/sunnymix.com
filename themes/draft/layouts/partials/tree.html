@@ -1,4 +1,4 @@
-{{ $bookSection := default "wikis" .Site.Params.BookSection  }}
+{{ $bookSection := default "wiki" .Site.Params.BookSection  }}
 
 {{- with .Site.GetPage $bookSection -}}
 <div class="tree">
