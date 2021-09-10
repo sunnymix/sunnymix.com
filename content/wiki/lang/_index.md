@@ -6,3 +6,5 @@ author: Sunny
 weight: 1
 ---
 
+- [编程范式](/wiki/coding/)
+
