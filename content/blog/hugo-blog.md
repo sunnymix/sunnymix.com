@@ -43,10 +43,10 @@ tags: ["hugo", "blog"]
 
 ```
 # 改造前：
-content/posts/article-name.md
+content/blog/article-name.md
 
 # 改造后：
-content/posts/article-name/
+content/blog/article-name/
 - index.md
 - image.png
 

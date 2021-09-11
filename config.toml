@@ -10,8 +10,8 @@ favicon = "favicon.png"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
+    name = "Blog"
+    url = "/blog/"
     weight = 2
   [[menu.main]]
     name = "Wiki"
