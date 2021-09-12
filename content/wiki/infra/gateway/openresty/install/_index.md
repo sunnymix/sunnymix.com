@@ -1,5 +1,5 @@
 ---
-title: "OpenResty安装和使用"
+title: "OpenResty Install"
 author: "Sunny"
 date: 2021-08-01T22:13:59+08:00
 draft: false
