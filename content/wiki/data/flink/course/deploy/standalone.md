@@ -10,13 +10,7 @@ tags: ["flink", "deploy"]
 
 ## 前置条件
 
-### Java
-
-参考：[Java快速上手](/wiki/lang/java/)
-
-### Scala
-
-参考：[Scala快速上手](/wiki/lang/scala/)
+- Java 环境
 
 ## 部署步骤
 
