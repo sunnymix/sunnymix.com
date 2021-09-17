@@ -14,11 +14,11 @@ weight: 1
 
 ### D1 来，我们一起做些什么吧
 
-d1-lets-do-something
+[d1-goal](/wiki/reading/book/self-made-script-lang/d1-goal/)
 
 ### D2 设计程序语言
 
-d2-design-the-lang
+d2-lang
 
 ### D3 分隔单词
 
@@ -34,7 +34,7 @@ d5-parser
 
 ### D6 通过解释执行程序
 
-d6-eval
+d6-interpreter
 
 ### D7 添加函数功能
 
@@ -42,11 +42,11 @@ d7-function
 
 ### D8 关联 Java 语言
 
-d8-call-java
+d8-native
 
 ### D9 设计面向对象语言
 
-d9-oo
+d9-oop
 
 ### D10 无法割舍的数组
 
