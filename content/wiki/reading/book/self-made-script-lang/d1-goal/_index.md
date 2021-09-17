@@ -1,5 +1,5 @@
 ---
-title: "Day1 Let's Do Something"
+title: "Day1 Goal"
 date: 2021-09-17T15:55:51+08:00
 draft: true
 author: Sunny

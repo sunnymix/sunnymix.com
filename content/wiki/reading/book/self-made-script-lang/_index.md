@@ -14,11 +14,11 @@ weight: 1
 
 ### D1 来，我们一起做些什么吧
 
-[d1-goal](/wiki/reading/book/self-made-script-lang/d1-goal/)
+[D1-Goal](/wiki/reading/book/self-made-script-lang/d1-goal/)
 
 ### D2 设计程序语言
 
-d2-lang
+[D2-Lang](/wiki/reading/book/self-made-script-lang/d2-lang/)
 
 ### D3 分隔单词
 
