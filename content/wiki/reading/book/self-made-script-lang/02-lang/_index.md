@@ -1,5 +1,5 @@
 ---
-title: "Day2 Lang"
+title: "02 Lang"
 date: 2021-09-17T17:05:30+08:00
 draft: true
 author: Sunny
