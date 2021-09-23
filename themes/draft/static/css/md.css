@@ -41,5 +41,6 @@
 }
 
 .md a:not(.icon) {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: var(--pm);
 }
