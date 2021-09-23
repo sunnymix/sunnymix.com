@@ -25,6 +25,7 @@ weight: 1
 
 ### 等宽
 
+- SF Mono
 - Verily Serif（客制化：Verily）
 - Go Mono
 - Luxi Mono

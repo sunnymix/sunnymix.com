@@ -1,7 +1,7 @@
 ---
 title: "02 Lang"
 date: 2021-09-17T17:05:30+08:00
-draft: true
+draft: false
 author: Sunny
 weight: 2
 ---
@@ -58,3 +58,4 @@ while i % 2 == 0 {
 不得不考虑的问题，避免出现的歧义：
 
 - 减少语法功能。
+
