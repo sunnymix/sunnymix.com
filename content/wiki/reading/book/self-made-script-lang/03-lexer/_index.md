@@ -19,15 +19,15 @@ weight: 3
 
 | 元字符      | 含义                             |
 | ----------- | -------------------------------- |
-| `.`         | 匹配任意字符。                   |
-| `[0-9]`     | 匹配 0 到 9 中的某个数字。       |
-| `[^0-9]`    | 匹配除 0 到 9 中之外的某个字符。 |
-| `pat*`      | 模式 pat 至少重复出现 0 次。     |
-| `pat+`      | 模式 pat 至少重复出现 1 次。     |
-| `pat?`      | 模式 pat 至少出现 0 次或 1 次。  |
-| `pat1|pat2` | 匹配 pat1 或 pat2。              |
-| `()`        | 将括号内视为一个完整的模式。     |
-| `\c`        | 与单个字符匹配（转义元字符）。   |
+| .           | 匹配任意字符。                   |
+| [0-9]      | 匹配 0 到 9 中的某个数字。       |
+| \[^0-9]    | 匹配除 0 到 9 中之外的某个字符。 |
+| pat\*      | 模式 pat 至少重复出现 0 次。     |
+| pat+      | 模式 pat 至少重复出现 1 次。     |
+| pat?      | 模式 pat 至少出现 0 次或 1 次。  |
+| pat1\|pat2 | 匹配 pat1 或 pat2。              |
+| ()        | 将括号内视为一个完整的模式。     |
+| \c        | 与单个字符匹配（转义元字符）。   |
 
 
 
@@ -35,7 +35,7 @@ weight: 3
 
 - 实现类：Lexer
 
-```java
+```
 public class Lexer {
 
     public static final String PAT = "\\s*((//.*)|([0-9]+)|(\"(\\\\\"|\\\\\\\\|\\\\n|[^\"])*\")"
@@ -157,7 +157,7 @@ public class Lexer {
 
 - 词法读取器：LexerReader
 
-```java
+```
 public class LexerReader extends Reader {
 
     private String buf = null;
@@ -213,7 +213,7 @@ public class LexerReader extends Reader {
 
 - 词法分析器测试类：LexerRunner
 
-```java
+```
 public class LexerRunner {
 
     public static void main(String[] args) throws ParseException {

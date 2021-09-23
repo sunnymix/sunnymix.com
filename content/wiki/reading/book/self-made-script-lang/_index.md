@@ -16,7 +16,7 @@ weight: 1
 
 #### [01 来，我们一起做些什么吧【Goal】](/wiki/reading/book/self-made-script-lang/01-goal/)
 
-#### [02 设计程序语言【Lang】](/wiki/reading/book/self-made-script-lang/02-goal/)
+#### [02 设计程序语言【Lang】](/wiki/reading/book/self-made-script-lang/02-lang/)
 
 #### [03 分隔单词【Lexer】](/wiki/reading/book/self-made-script-lang/03-lexer/)
 
@@ -58,21 +58,24 @@ weight: 1
 
 
 
-## 2.实践
+## 2.章节
 
 章节内容和产出：
 
-| 章节和主题 | 内容概要     | 产出成果 |
-| ---------- | ------------ | -------- |
-| 01 Goal    | 全书的目标   |          |
-| 02 Lang    | 语言设计概述 |          |
-| 03 Lexer   | 词法分析器   |          |
+| 章节和主题     | 内容概要     | 产出成果            |
+| -------------- | ------------ | ------------------- |
+| 01 Goal        | 全书的目标   |                     |
+| 02 Lang        | 语言设计概述 |                     |
+| 03 Lexer       | 词法分析     | 词法分析器：Lexer   |
+| 04 AST         | 抽象语法树   | 节点类型：ast       |
+| 05 Parser      | 语法分析     | 语法分析器：Parser  |
+| 06 Interpreter | 解释运行     | 解释器：Interpreter |
 
 
 
 ## 3.统一语言
 
-词汇表（三字缩写风格）：
+词汇表（采用简写风格）：
 
 | 英文 | 中文       | 解释                    |
 | ---- | ---------- | ----------------------- |
@@ -84,5 +87,5 @@ weight: 1
 | idx  | 索引下标   | 指 index                |
 | lex  | 词法分析器 | 指 lexer                |
 | ast  | 抽象语法树 | 指 abstract syntax tree |
-| exp  | 表达式     | 指 express              |
+| expr | 表达式     | 指 express              |
 
