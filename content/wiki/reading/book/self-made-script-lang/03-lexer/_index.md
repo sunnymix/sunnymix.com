@@ -11,8 +11,6 @@ weight: 3
 - 分词：找出源代码中有用的单词（后文统称为 Token）。
 - 去除空白和注释。
 
-
-
 ## 3.2 通过正则表达式定义 Token
 
 参考：正则常用元字符
@@ -28,8 +26,6 @@ weight: 3
 | pat1\|pat2 | 匹配 pat1 或 pat2。              |
 | ()        | 将括号内视为一个完整的模式。     |
 | \c        | 与单个字符匹配（转义元字符）。   |
-
-
 
 ## 3.3 借助 java.util.regex 设计 Lexer
 
@@ -151,8 +147,6 @@ public class Lexer {
 }
 ```
 
-
-
 ## 3.4 Lexer 试运行
 
 - 词法读取器：LexerReader
@@ -208,8 +202,6 @@ public class LexerReader extends Reader {
 
 }
 ```
-
-
 
 - 词法分析器测试类：LexerRunner
 

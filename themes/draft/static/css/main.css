@@ -107,7 +107,7 @@ a:not(.icon) {
 a:hover {
 	/*background-position: 0 100%;*/
 	/*color: var(--pm);*/
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 }
 
 a.icon:hover {
@@ -134,7 +134,8 @@ ul.clear ul {
 }
 
 .tree-item-link {
-	display: inline-block;
+	/*display: inline-block;*/
+	display: block;
 	line-height: var(--lh);
 }
 
