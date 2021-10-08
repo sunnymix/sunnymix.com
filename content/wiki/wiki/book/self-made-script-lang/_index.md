@@ -14,11 +14,11 @@ weight: 1
 
 | 章节                                                         | 内容         | 产出                |
 | ------------------------------------------------------------ | ------------ | ------------------- |
-| [01 Goal](/wiki/reading/book/self-made-script-lang/01-goal/) | 全书的目标   |                     |
-| [02 Lang](/wiki/reading/book/self-made-script-lang/02-lang)  | 语言设计概述 |                     |
-| [03 Lexer](/wiki/reading/book/self-made-script-lang/03-lexer) | 词法分析     | 词法分析器：Lexer   |
-| [04 AST](/wiki/reading/book/self-made-script-lang/04-ast)    | 抽象语法树   | 节点类型：ast       |
-| [05 Parser](/wiki/reading/book/self-made-script-lang/05-parser) | 语法分析     | 语法分析器：Parser  |
+| [01 Goal](/wiki/wiki/book/self-made-script-lang/01-goal/)    | 全书的目标   |                     |
+| [02 Lang](/wiki/wiki/book/self-made-script-lang/02-lang)     | 语言设计概述 |                     |
+| [03 Lexer](/wiki/wikis/book/self-made-script-lang/03-lexer)  | 词法分析     | 词法分析器：Lexer   |
+| [04 AST](/wiki/wiki/book/self-made-script-lang/04-ast)       | 抽象语法树   | 节点类型：ast       |
+| [05 Parser](/wiki/wiki/book/self-made-script-lang/05-parser) | 语法分析     | 语法分析器：Parser  |
 | 06 Interpreter                                               | 解释运行     | 解释器：Interpreter |
 | 07 Function                                                  |              |                     |
 | 08 Native                                                    |              |                     |

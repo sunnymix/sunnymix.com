@@ -23,8 +23,6 @@ author: Sunny
     - mysql
     - pingcap
     - spark
-- visual
-    - font
 - infra
     - cache
     - gateway
@@ -33,9 +31,6 @@ author: Sunny
     - zookeeper
     - security
         - oauth
-- reading
-    - book
-    - paper
 - system
     - cap
     - cluster
@@ -46,4 +41,9 @@ author: Sunny
     - memory
 - tool
     - keyboard
+- visual
+    - font
+- wiki
+    - book
+    - paper
 
