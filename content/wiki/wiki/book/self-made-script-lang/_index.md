@@ -1,9 +1,8 @@
 ---
-title: "Self Made Script Lang"
-date: 2021-09-17T15:12:35+08:00
+title: "Self Made Script Lang 自制脚本语言*"
+date: 2021-09-17T15:12:00+08:00
 draft: false
 author: Sunny
-weight: 1
 ---
 
 《两周自制脚本语言》千叶滋 2014-06

@@ -1,5 +1,5 @@
 ---
-title: "02 Lang"
+title: "02 Lang 语言设计*"
 date: 2021-09-17T17:05:30+08:00
 draft: false
 author: Sunny

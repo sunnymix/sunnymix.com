@@ -1,5 +1,5 @@
 ---
-title: "04 Sum, Diff, Slide - 编写中"
+title: "04 Sum Diff Slide 前缀和 差分 滑动窗*"
 date: 2021-10-08T17:17:00+08:00
 draft: false
 author: Sunny

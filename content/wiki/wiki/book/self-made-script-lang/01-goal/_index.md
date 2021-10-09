@@ -1,5 +1,5 @@
 ---
-title: "01 Goal"
+title: "01 Goal 目标*"
 date: 2021-09-17T15:55:51+08:00
 draft: false
 author: Sunny

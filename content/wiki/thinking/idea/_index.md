@@ -1,5 +1,5 @@
 ---
-title: "Idea 想法 - 已更新"
+title: "Idea 想法*"
 date: 2021-09-13T00:12:11+08:00
 draft: false
 author: Sunny
