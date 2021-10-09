@@ -44,13 +44,14 @@ html.dark #theme-switcher .light {
 }
 
 body.wide {
-	--w-mobile: 960px;
+	--w-mobile: 1080px;
 }
 
 body {
 	font-family: Helvetica, sans-serif;
 	max-width: var(--w-mobile);
-	margin: 50px auto 0;
+	padding: 50px 0;
+	margin: 0 auto;
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--ft);

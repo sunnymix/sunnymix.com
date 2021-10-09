@@ -56,6 +56,24 @@ weight: 5
 
 ## 5.3 使用语法分析器（Parser）生成抽象语法树（AST）
 
+### 5.3.1 Parser 内部结构
+
+- Ele
+    - TreeEle
+    - OrTreeEle
+    - RepeatEle
+    - TokenEle
+        - IdTokenEle
+        - NumTokenEle
+        - StrTokenEle
+    - LeafEle
+        - SkipEle
+    - ExprEle
+- Precedence
+- Operators: HashMap<String, Precedence>
+- Factory -> AstTree
+- Parser -> Ele, Factory
+
 ## 5.4 测试语法分析器（Parser）
 
 ## 5.5 总结
