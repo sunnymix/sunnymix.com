@@ -59,20 +59,38 @@ weight: 5
 ### 5.3.1 Parser 内部结构
 
 - Ele
-    - TreeEle
-    - OrTreeEle
-    - RepeatEle
-    - TokenEle
-        - IdTokenEle
-        - NumTokenEle
-        - StrTokenEle
-    - LeafEle
-        - SkipEle
-    - ExprEle
+    - TreeEle *
+    - OrTreeEle *
+    - RepeatEle *
+    - TokenEle *
+        - IdTokenEle *
+        - NumTokenEle *
+        - StrTokenEle *
+    - LeafEle *
+        - SkipEle *
+    - ExprEle *
 - Precedence
 - Operators: HashMap<String, Precedence>
 - Factory -> AstTree
 - Parser -> Ele, Factory
+
+示例代码文本：
+
+```
+even = 0
+odd = 0
+i = 1
+while i < 10 {
+    if i % 2 == 0 { // even number?
+        even = even + i
+    } else {
+        odd = odd + i
+    }
+}
+even + odd
+```
+
+
 
 ## 5.4 测试语法分析器（Parser）
 
