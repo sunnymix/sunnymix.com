@@ -14,21 +14,14 @@ favicon = "favicon.png"
     url = "/blog/"
     weight = 2
   [[menu.main]]
-    name = "Wiki"
-    url = "/wiki/"
+    name = "Contact"
+    url = "/contact/"
     weight = 3
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
-
-[taxonomies]
-  tag = "tags"
 
 [params]
   sitename = ""
-  copyright = "© 2013-2021 sunnymix.com, all rights reserved"
-  certificate = "（赣ICP备20006923号）"
+  copyright = "SunnyMix.Com © 2013-2021"
+  certificate = " · ICP备20006923号"
   dateform = "2006.01.02"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
