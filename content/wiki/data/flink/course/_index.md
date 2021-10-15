@@ -1,4 +1,0 @@
----
-title: "Course"
-draft: true
----
