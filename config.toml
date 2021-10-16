@@ -21,7 +21,7 @@ favicon = "favicon.png"
 [params]
   sitename = ""
   copyright = "SunnyMix.Com © 2013-2021"
-  certificate = " · ICP备20006923号"
+  certificate = " 赣ICP备20006923号"
   dateform = "2006.01.02"
   enableInlineShortcodes = true
   pygmentsCodeFences = true
