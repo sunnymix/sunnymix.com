@@ -40,7 +40,7 @@ author: "Sunny"
 
 `示例--读《Java并发编程实战》：`
 
-![breadth](http://sunnymix-10052526.file.myqcloud.com/public/cb93fa9e77c142e61cefd2ba81613ab0.png)
+![](_res/mind-map.png)
 
 ## 第二维度，深度穿透
 
@@ -58,7 +58,7 @@ Markdown书写工具。
 
 `示例--读“Akka官方文档”笔记：`
 
-![depth](http://sunnymix-10052526.file.myqcloud.com/public/37e54c696e0e9bff09886fe0c376ec44.png)
+![](_res/note.png)
 
 ## 第三维度，形象穿透
 
@@ -82,7 +82,7 @@ Markdown书写工具。
 
 `示例--“Java的锁”图解：`
 
-![imagine](http://sunnymix-10052526.file.myqcloud.com/public/b176972bda534e687ed1e5fb8bb3266c.jpg)
+![imagine](_res/draw.jpg)
 
 
 ## 第四维度，实践穿透
