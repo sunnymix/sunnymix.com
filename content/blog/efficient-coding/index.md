@@ -85,7 +85,7 @@ author: "Sunny"
 
 通过第 1 步的组件和接口设计，我们能快速的编写各个组件的骨架代码：
 
-（1）RouteController # routes (group)：查询并展示某分组的路由表
+- RouteController # routes (group)：查询并展示某分组的路由表
 
 ```
 public Mono<String> routes (final Model model,
@@ -97,7 +97,7 @@ public Mono<String> routes (final Model model,
 }
 ```
 
-（2）RouteCache # getRoutes (group)：从缓存中查询某分组的路由表
+- RouteCache # getRoutes (group)：从缓存中查询某分组的路由表
 
 ```
 public Map<String, RouteDefinition> getRoutes (String group) {
@@ -106,7 +106,7 @@ public Map<String, RouteDefinition> getRoutes (String group) {
 }
 ```
 
-（3）RedisService # scanHash：扫描 Redis 哈希表键中有指定前缀的子哈希表
+- RedisService # scanHash：扫描 Redis 哈希表键中有指定前缀的子哈希表
 
 ```
 public Map<String, Object> scanHash (String key, String prefix, long limit) {
