@@ -128,7 +128,7 @@ code {
 	word-wrap: break-word;
 	word-break:  word-break;
 	white-space: break-spaces;
-	font-family: "SFMono", "SF Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: Verily, "SFMono", "SF Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 	font-size: 13px;
 }
 
