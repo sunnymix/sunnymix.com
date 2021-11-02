@@ -1,5 +1,5 @@
 ---
-title: "编程的法则*"
+title: "编程的法则 *"
 date: 2021-10-27T13:38:00+08:00
 draft: false
 author: "Sunny"
