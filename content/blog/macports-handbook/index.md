@@ -1,5 +1,5 @@
 ---
-title: "MacPorts 手册（更新中）"
+title: "MacPorts 手册 *"
 date: 2021-10-31T22:46:00+08:00
 draft: false
 author: "Sunny"
