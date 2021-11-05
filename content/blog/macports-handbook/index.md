@@ -16,13 +16,13 @@ MacPorts 原名 DarwinPorts，是 macOS 和 Darwin 操作系统的软件包管�
 
 ### search 搜索
 
-```bash
+```
 $ port search <package-name>
 ```
 
 ### install 安装
 
-```bash
+```
 $ sudo port install <package-name>
 ```
 
