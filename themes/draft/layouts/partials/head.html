@@ -7,7 +7,7 @@
 	{{- if .IsHome -}}
 		{{ .Site.Title }} {{ if .Site.Params.subtitle }} - {{ .Site.Params.subtitle }} {{ end }}
 	{{- else -}}
-		{{ .Site.Title }} - {{ .Title }}
+		{{ .Title }} - {{ .Site.Title }}
 	{{- end -}}
 	</title>
 	<link rel="shortcut icon" href="/favicon.png" />
