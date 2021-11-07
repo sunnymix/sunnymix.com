@@ -30,7 +30,7 @@ $ sudo port install <package-name>
 
 
 
-## 3 常用工具
+## 常用工具
 
 ### pcre
 
