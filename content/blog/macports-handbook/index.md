@@ -48,9 +48,11 @@ $ sudo port install openssl
 
 ## 常见问题
 
-### 安装中断
+### 安装过程中断
 
-解决方式：
+原因：国内无法访问国外镜像。
+
+解决：
 
 1. 强制退出安装程序；
 2. 关闭后台安装程序：ps aux | grep install ； kill -9 pid ；
