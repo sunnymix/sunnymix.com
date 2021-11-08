@@ -7,22 +7,22 @@ author: "Sunny"
 
 MacPorts 原名 DarwinPorts，是 macOS 和 Darwin 操作系统的软件包管理系统，用于简化软件的安装和管理。
 
-## 官方资料
+## 1 官方资料
 
 - [MacPorts Guide](https://guide.macports.org/)
 - [MacPorts Ports](https://ports.macports.org/)
 
 
 
-## 常用命令
+## 2 常用命令
 
-### search 搜索
+### 2.1 search 搜索
 
 ```
 $ port search <package-name>
 ```
 
-### install 安装
+### 2.2 install 安装
 
 ```
 $ sudo port install <package-name>
@@ -30,15 +30,19 @@ $ sudo port install <package-name>
 
 
 
-## 常用工具
+## 3 常用软件
 
-### pcre
+### 3.1 pcre
+
+Nginx 必备软件。
 
 ```
 $ sudo port install pcre
 ```
 
-### openssl
+### 3.2 openssl
+
+Nginx 必备软件。
 
 ```
 $ sudo port install openssl
@@ -46,9 +50,9 @@ $ sudo port install openssl
 
 
 
-## 常见问题
+## 4 常见问题
 
-### 安装过程中断
+### 4.1 安装过程中断
 
 原因：国内无法访问国外镜像。
 
