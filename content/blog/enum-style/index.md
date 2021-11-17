@@ -5,5 +5,39 @@ draft: false
 author: "Sunny"
 ---
 
-这是一个会改变项目命运的抉择。
+大家可能都觉得 Enum 是小得不能再小的常识问题了，这还有什么好讨论的呢？
+
+但我想说的是，Enum 风格是一个会改变项目命运的抉择。
+
+先来看看，目前两种最常见的 Enum 风格，
+
+一是数字风格：
+
+```
+@AllArgsConstructor
+@Getter
+public enum UserType {
+    PATIENT(1, "患者"),
+    DOCTOR(2, "医生"),
+    STAFF(3, "员工");
+    
+    private final Integer value;
+    private final String name;
+}
+```
+
+二是字符串风格：
+
+```
+@AllArgsConstructor
+@Getter
+public enum UserType {
+    PATIENT("PATIENT", "患者"),
+    DOCTOR("DOCTOR", "医生"),
+    STAFF("STAFF", "员工");
+    
+    private final String value;
+    private final String name;
+}
+```
 
