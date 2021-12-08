@@ -1,8 +1,9 @@
-baseURL = "/"
+baseURL = "/my/"
 languageCode = "zh-CN"
 title = "sunnymix.com"
 theme = "draft"
 favicon = "favicon.png"
+publishDir = "public/my/"
 
 [menu]
   [[menu.main]]
