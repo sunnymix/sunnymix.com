@@ -14,6 +14,6 @@ author: "Sunny"
 
 ### 扩展选择（选择文字）
 
-Command: Add Selection To Next Find Match
+- Command: Add Selection To Next Find Match
+- 默认绑定：cmd + d，修改为：cmd + e（取 expand 含义）
 
-默认绑定：cmd + d，修改为：cmd + e（取 expand 含义）
