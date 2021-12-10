@@ -17,3 +17,16 @@ author: "Sunny"
 - Command: Add Selection To Next Find Match
 - 默认绑定：cmd + d，修改为：cmd + e（取 expand 含义）
 
+## Workbench Color 自定义颜色
+
+- Code - Preferences - Settings（快捷键：cmd + `）
+- 搜索：color；找到：Workbench: Color Customizations；打开：Edit in settings.json
+
+```
+"workbench.colorCustomizations": {
+    "statusBar.background" : "#303030",
+    "statusBar.noFolderBackground" : "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+}
+```
+
