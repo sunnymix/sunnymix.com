@@ -1,5 +1,5 @@
 ---
-title: "VSCode 手册 *"
+title: "VS Code 手册 *"
 date: 2021-12-09T22:30:00+08:00
 draft: false
 author: "Sunny"
