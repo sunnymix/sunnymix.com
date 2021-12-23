@@ -7,6 +7,8 @@ author: "Sunny"
 
 ## 从零开始
 
+（参考：[Ant Design 项目实战](https://ant.design/docs/react/practical-projects-cn)）
+
 ### 1. 安装 Node.js
 
 - https://nodejs.org/en/
