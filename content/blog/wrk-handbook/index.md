@@ -62,9 +62,16 @@ Transfer/sec:    540.16KB
 wrk -c1 -d1s -t1 --latency https://www.baidu.com -s api.lua
 ```
 
+
+
 ## 进阶
 
 ### 1. 随机测试样本
 
 ### 2. 高效随机样本
 
+
+
+## 参考
+
+- [压测工具之wrk](https://alexanderwangsgithub.github.io/blog/wrk.html)
