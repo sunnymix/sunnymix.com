@@ -25,7 +25,22 @@ jar {
         attributes('Main-Class': '?')
     }
     from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.runtimeClasspath.collect {
+            exclude '.project'
+            exclude '.classpath'
+            exclude 'about.html'
+            exclude 'LICENSE'
+            exclude 'NOTICE'
+            exclude 'LICENSE.txt'
+            exclude 'NOTICE.txt'
+            exclude 'META-INF/*'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'META-INF/DEPENDENCIES'
+
+            it.isDirectory() ? it : zipTree(it)
+        }
     }
 }
 ```
