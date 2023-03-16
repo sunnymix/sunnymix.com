@@ -2,10 +2,10 @@
 	<h1>{{ .Title }}</h1>
 	<div class="mtb-1 c-tag">
 		{{- if .Params.Author -}}
-		<span class="tag mr-1">{{ .Params.Author }} </span>
+		<span class="tag mr-1">{{ .Params.Author }}</span>
 		{{- end -}}
 		{{- if .Params.Date -}}
-		<span class="tag mr-1">{{ .Params.Date }} </span>
+		<span class="tag mr-1">{{ .Params.Date.Format "2006.01.02" }}</span>
 		{{- end -}}
 	</div>
 	<p>{{ .Description }}</p>
