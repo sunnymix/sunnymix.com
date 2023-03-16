@@ -4,6 +4,9 @@
 		{{- if .Params.Author -}}
 		<span class="tag mr-1">{{ .Params.Author }} </span>
 		{{- end -}}
+		{{- if .Params.Date -}}
+		<span class="tag mr-1">{{ .Params.Date }} </span>
+		{{- end -}}
 	</div>
 	<p>{{ .Description }}</p>
 	<div class="md">
