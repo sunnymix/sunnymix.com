@@ -139,7 +139,7 @@ a {
 }
 
 a:not(.icon) {
-	color: inherit;
+/*	color: inherit;*/
 	/*text-decoration: underline;*/
 	/*text-decoration-color: var(--pm);*/
 	/*background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, var(--pm) 50% );*/
