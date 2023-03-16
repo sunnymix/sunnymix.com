@@ -1,10 +1,9 @@
 .md blockquote {
-	font-family: 'Inter';
 	background-color: rgba(148, 148, 149, 0.08) ;
 	margin: 1.5em 0px;
 	padding: 1.1em 20px 1px 20px;
-	border-left: 8px solid var(--pm);
-	font-style: italic;
+	border-left: 2px solid var(--bd);
+	color: #646a73;
 }
 
 .md table {
